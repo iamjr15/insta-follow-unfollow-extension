@@ -1,15 +1,1 @@
-<svg id="Group_37" data-name="Group 37" xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="20 20 80 80">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #f1f2ff;
-      }
-
-      .cls-2 {
-        fill: #696ce4;
-      }
-    </style>
-  </defs>
-  <!-- <circle id="Ellipse_18" data-name="Ellipse 18" class="cls-1" cx="60" cy="60" r="60"/> -->
-  <path id="Icon_open-reload" data-name="Icon open-reload" class="cls-2" d="M26.781,0A26.781,26.781,0,1,0,45.8,45.8l-4.821-4.821A20.1,20.1,0,1,1,26.714,6.7a19.477,19.477,0,0,1,13.993,6.093l-7.3,7.3H53.495V0L45.527,7.967A26.631,26.631,0,0,0,26.714,0Z" transform="translate(32.815 33.219)"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" id="Group_37" width="120" height="120" data-name="Group 37" viewBox="20 20 80 80"><defs><style>.cls-2{fill:#696ce4}</style></defs><path id="Icon_open-reload" d="M26.781,0A26.781,26.781,0,1,0,45.8,45.8l-4.821-4.821A20.1,20.1,0,1,1,26.714,6.7a19.477,19.477,0,0,1,13.993,6.093l-7.3,7.3H53.495V0L45.527,7.967A26.631,26.631,0,0,0,26.714,0Z" class="cls-2" data-name="Icon open-reload" transform="translate(32.815 33.219)"/></svg>
