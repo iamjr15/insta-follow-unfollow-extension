@@ -1,0 +1,36 @@
+<svg id="Component_4_1" data-name="Component 4 – 1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #696ce4;
+      }
+
+      .cls-1 {
+        stroke-width: 1.3px;
+      }
+
+      .cls-2 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.167px;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Rectangle_17" data-name="Rectangle 17" class="cls-1">
+    <rect class="cls-3" width="32" height="32" rx="8"/>
+    <rect class="cls-4" x="0.65" y="0.65" width="30.7" height="30.7" rx="7.35"/>
+  </g>
+  <g id="Icon_feather-log-out" data-name="Icon feather-log-out" transform="translate(9 10.75)">
+    <path id="Path_90" data-name="Path 90" class="cls-2" d="M5.25,12.25H2.917A1.167,1.167,0,0,1,1.75,11.083V2.917A1.167,1.167,0,0,1,2.917,1.75H5.25" transform="translate(0 -1.75)"/>
+    <path id="Path_91" data-name="Path 91" class="cls-2" d="M9.333,9.917,12.25,7,9.333,4.083" transform="translate(0 -1.75)"/>
+    <path id="Path_92" data-name="Path 92" class="cls-2" d="M12.25,7h-7" transform="translate(0 -1.75)"/>
+  </g>
+</svg>

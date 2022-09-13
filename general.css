@@ -1,0 +1,1046 @@
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(chrome-extension://__MSG_@@extension_id__/fonts/Montserrat/Montserrat-Regular.ttf) format("woff2");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(chrome-extension://__MSG_@@extension_id__/fonts/Montserrat/Montserrat-Medium.ttf) format("woff2");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(chrome-extension://__MSG_@@extension_id__/fonts/Montserrat/Montserrat-SemiBold.ttf) format("woff2");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(chrome-extension://__MSG_@@extension_id__/fonts/Montserrat/Montserrat-Bold.ttf) format("woff2");
+}
+
+#extensionFollower-btn,
+#extensionFollowing-btn {
+  border: 1px solid #b9bae3;
+  padding: 8px 12px;
+  margin: 10px auto;
+  display: block;
+  border-radius: 4px;
+  color: #fff;
+  background: -webkit-gradient(linear, left top, right top, from(#5e48cb), to(#686ae3));
+  background: linear-gradient(90deg, #5e48cb, #686ae3);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#extensionFollowing-btn {
+  background: -webkit-gradient(linear, left top, right top, from(#476072));
+  background: linear-gradient(90deg, #476072);
+}
+
+#extensionBox {
+  --primary-shading-start: #5e48cb;
+  --primary-shading-end: #686ae3;
+  --primary-background-color: #696ce4;
+  --secondary-background-color: #f1f2ff;
+  --text-secondary: #696ce4;
+  --text-light-theme: #5d5e98;
+  --border-color: #b9bae3;
+  --border-secondary: #696ce4;
+  position: fixed;
+  z-index: 2147483647;
+  right: 7px;
+  top: 60px;
+  background-color: #fff;
+  width: 360px;
+  height: 720px;
+  -webkit-box-shadow: 0 0 10px 0 #0003;
+          box-shadow: 0 0 10px 0 #0003;
+  -webkit-transition: right 0.5s ease;
+  transition: right 0.5s ease;
+  /* Authentication page css */
+  /* footer */
+  /* success */
+  /* wrong */
+  /* reload */
+  /* footer after user log in */
+  /* start page */
+  /* load to slack page */
+}
+
+#extensionBox #extensionBody {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 50px 1fr 60px;
+      grid-template-rows: 50px 1fr 60px;
+}
+
+#extensionBody .main [aria-label="maintenance-guide"] {
+  width: 100%;
+  text-align: center;
+  color:#323232;
+  text-align: center;
+}
+.mx-2{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  width: 150px;
+  height: 30px;
+  border: 2px solid var(--border-color);
+  background: #fff;
+  padding: 15px 30px;
+  margin: 14px auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+  color: black;
+  background: linear-gradient(90deg, white, white);
+  font-weight: 600;
+}
+
+#extensionBox.secondaryScheme {
+  --primary-shading-start: #324350 !important;
+  --primary-shading-end: #476072 !important;
+  --primary-background-color: #476072 !important;
+  --secondary-background-color: #c6cbcf !important;
+  --text-secondary: #476072 !important;
+  --text-light-theme: #607e94 !important;
+  --border-color: #5d6c77 !important;
+  --border-secondary: #476072 !important;
+}
+
+#extensionBox .authenticateBodyHeight {
+  height: 550.4px;
+}
+
+#extensionBox .bodyHeight {
+  height: 590px;
+}
+
+#extensionBox .bodyCardHeight {
+  height: 510px;
+}
+
+#extensionBox.uiClosed {
+  right: -360px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  z-index: 2147483646;
+}
+
+#extensionBox.uiClosed .ui_close_button {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation: pulse-fade-out 2s infinite linear;
+          animation: pulse-fade-out 2s infinite linear;
+}
+
+#extensionBox.uiClosed .ui_close_button img {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+@-webkit-keyframes pulse-fade-out {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 #0003;
+            box-shadow: 0 0 0 0 #0003;
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 18px #0000;
+            box-shadow: 0 0 0 18px #0000;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 #0000;
+            box-shadow: 0 0 0 0 #0000;
+  }
+}
+
+@keyframes pulse-fade-out {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 #0003;
+            box-shadow: 0 0 0 0 #0003;
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 18px #0000;
+            box-shadow: 0 0 0 18px #0000;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 #0000;
+            box-shadow: 0 0 0 0 #0000;
+  }
+}
+
+#extensionBox .ui_close_button {
+  position: absolute;
+  z-index: 2147483646;
+  top: 50px;
+  left: -60px;
+  width: 60px;
+  height: 40px;
+  padding: 10px;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  background-color: var(--primary-background-color);
+  cursor: pointer;
+}
+
+#extensionBox .ui_close_button img {
+  width: 40px;
+  height: 20px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+ #extensionBox header .logo .logo-image {
+  height: 25px;
+  width: 120px;
+  
+} 
+
+#extensionBox header {
+  height: 50px;
+  background-color: var(--secondary-background-color);
+  position: relative;
+}
+#extensionBox .manifest-version{
+  position: absolute;
+  right: 8px;
+  bottom: 1px;
+  font-size: 14px;
+  color: rgba(95, 99, 104);
+}
+#extensionBox header .closeUI-btn {
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  padding: 5px;
+  border: none;
+  font-size: 10px;
+  color: #fff;
+  background: -webkit-gradient(linear, left top, right top, from(var(--primary-shading-start)), to(var(--primary-shading-end)));
+  background: linear-gradient(90deg, var(--primary-shading-start), var(--primary-shading-end));
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+#extensionBox .container {
+  padding: 60px 10px;
+}
+
+#extensionBox .text-heading {
+  font-size: 24px;
+  color: #000;
+}
+
+#extensionBox .text-para {
+  color: #979797;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#extensionBox .color-lightBlack {
+  color: #222222;
+}
+
+#extensionBox .input-group input {
+  border-radius: 8px;
+  padding: 12px 12px;
+  border: none;
+  width: calc(100% - 12px);
+  border: 1px solid #e6e6e6;
+  margin: 5px;
+}
+
+#extensionBox .page_image {
+  height: 100px;
+}
+
+#extensionBox .input-group input::-webkit-input-placeholder {
+  font-weight: 600;
+  color: #979797;
+  font-size: 14px;
+}
+
+#extensionBox .input-group input:-ms-input-placeholder {
+  font-weight: 600;
+  color: #979797;
+  font-size: 14px;
+}
+
+#extensionBox .input-group input::-ms-input-placeholder {
+  font-weight: 600;
+  color: #979797;
+  font-size: 14px;
+}
+
+#extensionBox .input-group input::placeholder {
+  font-weight: 600;
+  color: #979797;
+  font-size: 14px;
+}
+
+#extensionBox .input-group button {
+  border-radius: 8px;
+  padding: 12px 12px;
+  width: calc(100% - 12px);
+  min-width: 120px;
+  border: 1px solid #e6e6e6;
+  margin: 5px;
+}
+
+#extensionBox .input-group button span {
+  height: 16px;
+}
+.dot{
+  height: 10px;
+  width: 10px;
+  position: relative;
+  left:12px;
+  bottom: 0px;
+  background-color: #2DCE89;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot1{
+  height: 10px;
+  width: 10px;
+  position: relative;
+  left:-4px;
+  bottom: 0px;
+  background-color: #2DCE89;
+  border-radius: 50%;
+  display: inline-block;
+}
+.btn5{
+  position: relative;
+  width: 150px;
+  height: 30px;
+  border: 2px solid var(--border-color);
+  background: #fff;
+  padding: 15px 30px;
+  margin: 14px auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+  color: black;
+  background: linear-gradient(90deg, white, white);
+  font-weight: 600;
+}
+.btn4{
+  position: relative;
+  left: 10px;
+  width: 150px;
+  height: 30px;
+  border: 2px solid var(--border-color);
+  background: #fff;
+  padding: 15px 30px;
+  margin: 14px auto;
+  display: flex;
+  border-radius: 8px;
+  cursor: pointer;
+  color: black;
+  background: linear-gradient(90deg, white, white);
+  font-weight: 600;
+  align-items: center;
+}
+
+#extensionBox .button-primary,
+#extensionBox .btn.button-primary {
+  color: #fff;
+  background: -webkit-gradient(linear, left top, right top, from(var(--primary-shading-start)), to(var(--primary-shading-end)));
+  background: linear-gradient(90deg, var(--primary-shading-start), var(--primary-shading-end));
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#extensionBox .icon-s {
+  height: 12px;
+}
+
+#extensionBox .icon,
+#extensionBox .icon-m {
+  height: 16px;
+}
+
+#extensionBox .icon-lg {
+  height: 40px;
+}
+
+#extensionBox .icon-xl {
+  height: 30px;
+}
+
+#extensionBox .authenticate-footer {
+  min-height: 50px;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 16px;
+  background-color: var(--secondary-background-color);
+  color: var(--text-light-theme);
+  font-weight: 500;
+}
+
+#extensionBox .authenticate-footer .help a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#extensionBox .loading .text-heading {
+  font-size: 20px;
+}
+
+#extensionBox .loading .text-para {
+  color: var(--text-light-theme);
+}
+
+#extensionBox .success .text-heading {
+  font-size: 20px;
+}
+
+#extensionBox .wrong .input-group {
+  padding: 20px 16px;
+}
+
+#extensionBox .reload .text-heading {
+  font-size: 20px;
+}
+
+#extensionBox .reload .text-para {
+  color: var(--text-light-theme);
+}
+
+#extensionBox .footer-loggedIn {
+  background-color: var(--secondary-background-color);
+  padding: 10px;
+  height: 60px;
+}
+
+#extensionBox .footer-loggedIn .footer-toolkit {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 40px 40px;
+      grid-template-columns: 1fr 40px 40px;
+  gap: 0 10px;
+}
+
+#extensionBox .footer-loggedIn .footer-toolkit a {
+  border: none;
+  background-color: inherit;
+  height: 40px;
+  text-decoration: none;
+}
+
+#extensionBox .footer-loggedIn .footer-toolkit a > img {
+  height: 40px;
+}
+
+#extensionBox .footer-loggedIn .footer-toolkit .button-marketing {
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#extensionBox .footer-loggedIn .footer-toolkit .button-marketing .gem-icon {
+  padding: 0 10px;
+  height: 14px;
+}
+
+#extensionBox .btn {
+  border: 1px solid var(--border-color);
+  background: #fff;
+  margin: 10px auto;
+  display: block;
+  color: #000;
+  border-radius: 4px;
+  width: 230px;
+  padding: 12px 16px;
+  cursor: pointer;
+}
+
+#extensionBox .start {
+  height: calc($total-height - $header-height - $footer-height);
+}
+
+#extensionBox .total-member-count {
+  font-size: 22px;
+  text-align: center;
+  color: #000;
+}
+
+#extensionBox .start .container {
+  padding: 10px;
+  height: 100%;
+}
+
+#extensionBox .start .container .button-primary {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+#extensionBox .progress {
+  color: #58d7ad;
+}
+
+#extensionBox .button-progress {
+  background: -webkit-gradient(linear, left top, right top, from(#4acc90), to(#69e4ce));
+  background: linear-gradient(90deg, #4acc90, #69e4ce);
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#extensionBox .slackPage .container {
+  padding: 0;
+  height: 650px;
+}
+
+#extensionBox .slackPage .container p {
+  width: 80%;
+}
+
+#extensionBox .buttonOriginal {
+  background: -webkit-gradient(linear, left top, right top, from(#686ae3), to(#5e48cb));
+  background: linear-gradient(90deg, #686ae3, #5e48cb);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#extensionBox .buttonOther {
+  background: -webkit-gradient(linear, left top, right top, from(#476072));
+  background: linear-gradient(90deg, #476072);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#extensionBox #boxContainer {
+  height: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.12);
+  position: relative;
+  z-index: 1;
+}
+
+#extensionBox #boxContainer > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  color: #a7a7a7;
+  font-weight: 500;
+}
+
+#extensionBox #boxContainer .border_and_text-secondary {
+  border-bottom: 2px solid var(--border-secondary);
+  color: var(--text-secondary);
+}
+
+#extensionBox .text_light_theme {
+  color: var(--text-light-theme);
+}
+
+#extensionBox #optionContainer {
+  height: 470px;
+  position: relative;
+  overflow-x: hidden;
+  padding-top: 15px;
+}
+
+
+#extensionBox #optionContainer #followOptions,
+#extensionBox #optionContainer #unfollowOptions {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  padding: 20px;
+  overflow-y: auto;
+  width: 360px;
+  background-color: #fff;
+}
+
+#extensionBox #optionContainer #followOptions::-webkit-scrollbar,
+#extensionBox #optionContainer #unfollowOptions::-webkit-scrollbar {
+  width: 5px;
+}
+
+#extensionBox #optionContainer #followOptions::-webkit-scrollbar-track,
+#extensionBox #optionContainer #unfollowOptions::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(138, 138, 138, 0.3);
+          box-shadow: inset 0 0 6px rgba(138, 138, 138, 0.3);
+}
+
+#extensionBox #optionContainer #followOptions::-webkit-scrollbar-thumb,
+#extensionBox #optionContainer #unfollowOptions::-webkit-scrollbar-thumb {
+  background-color: #c7c7c7;
+  border-radius: 8px;
+}
+
+#extensionBox #optionContainer #followOptions p,
+#extensionBox #optionContainer #unfollowOptions p {
+  color: var(--text-light-theme);
+}
+
+
+#extensionBox #optionContainer #unfollowOptions .m-m #hide2  {
+  color: red;
+}
+#extensionBox #optionContainer #followOptions .m-m #hide1  {
+  color: red;
+}
+
+#extensionBox #optionContainer #unfollowOptions .m-m .selectedOption  {
+  color: var(--text-light-theme); 
+}
+
+
+#extensionBox #optionContainer #unfollowOptions  .unfollowNumber p  {
+  color: var(--text-light-theme);
+}
+
+#extensionBox #optionContainer #followOptions label,
+#extensionBox #optionContainer #unfollowOptions label {
+  padding: 8px 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#extensionBox #optionContainer #followOptions label input,
+#extensionBox #optionContainer #unfollowOptions label input {
+  margin-right: 12px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid var(--border-secondary);
+  color: #000;
+}
+
+#extensionBox #optionContainer #followOptions #follow_limit_input_container,
+#extensionBox #optionContainer #followOptions #unfollow_limit_input_container,
+#extensionBox #optionContainer #unfollowOptions #follow_limit_input_container,
+#extensionBox #optionContainer #unfollowOptions #unfollow_limit_input_container {
+  margin-left: 32px;
+}
+
+#extensionBox #optionContainer #followOptions #follow_limit_input_container input,
+#extensionBox #optionContainer #followOptions #unfollow_limit_input_container input,
+#extensionBox #optionContainer #unfollowOptions #follow_limit_input_container input,
+#extensionBox #optionContainer #unfollowOptions #unfollow_limit_input_container input {
+  width: 100px;
+  border-radius: 8px;
+  border: 1px solid var(--border-secondary);
+}
+
+#extensionBox #optionContainer #followOptions {
+  left: 0;
+  /* height: 460px; */
+  padding-top: 50px;
+}
+
+
+
+#extensionBox #optionContainer #unfollowOptions {
+  left: 360px;
+}
+
+#extensionBox #optionContainer #unfollowOptions .block {
+  display: block;
+}
+
+#extensionBox #optionContainer #unfollowOptions .block select {
+  padding: 0;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+#extensionBox #optionContainer #followOptions.left {
+  left: -360px;
+}
+
+#extensionBox #optionContainer #unfollowOptions.left {
+  left: 0;
+}
+
+#extensionBox #followUpdate p {
+  color: var(--text-light-theme);
+}
+
+#extensionBox .followNumber {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+#extensionBox #unfollowUpdate p {
+  color: var(--text-light-theme);
+}
+
+#extensionBox .unfollowNumber {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+#extensionBox #stop_following_button,
+#extensionBox #stop_unfollowing_button {
+  background: none;
+  background-color: #e36868;
+  padding: 12px 16px;
+  font-size: 20px;
+  color: #fff;
+  width: 230px;
+  margin: 10px auto;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#extensionBox .profileImage img,
+#extensionBox .selfImage img {
+  display: block;
+  margin: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 60px;
+}
+
+/*#extensionBox {
+  flex related classes
+  alignment
+  margin related
+}*/
+
+#extensionBox * {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Montserrat;
+}
+
+#extensionBox .text-red {
+  color: red !important;
+}
+
+#extensionBox .text-theme {
+  color: #696ce4;
+}
+
+#extensionBox .fw-l {
+  font-weight: 300;
+}
+
+#extensionBox .fw-n {
+  font-weight: 400;
+}
+
+#extensionBox .fw-m {
+  font-weight: 500;
+}
+
+#extensionBox .fw-b {
+  font-weight: 600;
+}
+
+#extensionBox .fs-s {
+  font-size: 14px;
+}
+
+#extensionBox .fs-m {
+  font-size: 16px;
+}
+
+#extensionBox .fs-l {
+  font-size: 18px;
+}
+
+#extensionBox .fs-xl {
+  font-size: 20px;
+}
+
+#extensionBox .block {
+  display: block;
+}
+
+#extensionBox .none {
+  display: none !important;
+}
+
+#extensionBox .inline-block {
+  display: inline-block;
+}
+
+#extensionBox .grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+#extensionBox .place-center {
+  place-items: center;
+}
+
+#extensionBox .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* flex-direction: column; */
+}
+
+#extensionBox .flex-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#extensionBox .justify-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#extensionBox .justify-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#extensionBox .align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#extensionBox .text-center {
+  text-align: center;
+}
+
+#extensionBox .line-m {
+  line-height: 2rem;
+}
+
+#extensionBox .m-s {
+  margin: 8px;
+}
+
+#extensionBox .mr-s {
+  margin-right: 8px;
+}
+
+#extensionBox .ml-s {
+  margin-left: 8px;
+}
+
+#extensionBox .m-m {
+  margin: 12px;
+}
+
+#extensionBox .m-n {
+  margin: 0;
+}
+
+#extensionBox .m-nb {
+  margin-bottom: 0;
+}
+
+#extensionBox .mt-m {
+  margin-top: 8px;
+}
+
+#extensionBox .my-m {
+  margin: 8px 0;
+}
+
+#extensionBox .mt-xl {
+  margin-top: 16px;
+}
+
+#extensionBox .m-rm {
+  margin-right: 8px;
+}
+
+#extensionBox .m-lm {
+  margin-left: 8px;
+}
+
+#extensionBox button {
+  cursor: pointer;
+}
+
+#extensionBox a {
+  cursor: pointer;
+}
+
+#extensionBox .pointer {
+  cursor: pointer;
+}
+
+#extensionBox .head_card_container {
+  flex-direction: row;
+  padding: 20px 30px;
+  padding-bottom: 10px;
+}
+
+#extensionBox .head_card_container .head_card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50px 1fr;
+      grid-template-columns: 50px 1fr;
+}
+
+#extensionBox .head_card_container .head_card img {
+  height: 50px;
+  border-radius: 4px;
+}
+
+#extensionBox .head_card_container .head_card .head_card_body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-left: 12px;
+}
+
+#extensionBox .head_card_container .head_card .head_card_body .head_card_username {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 4px;
+}
+
+#extensionBox .head_card_container .head_card .head_card_body .head_card_username span img {
+  padding-left: 8px;
+  height: 12px;
+}
+
+#extensionBox .head_card_container .head_card .head_card_body .head_card_users {
+  color: #000a;
+  display: flex;
+  flex-direction: column;
+}
+
+#extensionBox .head_card_container .head_card .head_card_body .head_card_users span {
+  display: inline;
+  margin-left: 2px;
+}
+
+#extensionBox .selectListMenu {
+  color: #696ce4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#extensionBox .selectListMenu button {
+  border: 2px solid #696ce4;
+  padding: 10px 12px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  margin: 6px 0;
+  background-color: #0000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-overflow: ellipsis;
+  color: inherit;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+#extensionBox .selectListMenu h1 {
+  font-size: 20px;
+  margin: 12px 8px;
+}
+
+#extensionBox .selectListMenu p {
+  color: #000;
+}
+
+#extensionBox .profileInfo,
+#extensionBox .selfInfo {
+  color: #696ce4;
+}
+
+#myp2 p {
+  color:red
+}
+/*# sourceMappingURL=general.css.map */
+
+.logout-disabled{
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.3;
+}

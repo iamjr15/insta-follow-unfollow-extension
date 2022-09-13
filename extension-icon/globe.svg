@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16.5" height="16.5" viewBox="0 0 16.5 16.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #696ce4;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <g id="Icon_feather-globe" data-name="Icon feather-globe" transform="translate(0.75 0.75)">
+    <path id="Path_97" data-name="Path 97" class="cls-1" d="M16.5,9A7.5,7.5,0,1,1,9,1.5,7.5,7.5,0,0,1,16.5,9Z" transform="translate(-1.5 -1.5)"/>
+    <path id="Path_98" data-name="Path 98" class="cls-1" d="M1.5,9h15" transform="translate(-1.5 -1.5)"/>
+    <path id="Path_99" data-name="Path 99" class="cls-1" d="M9,1.5A11.475,11.475,0,0,1,12,9a11.475,11.475,0,0,1-3,7.5A11.475,11.475,0,0,1,6,9,11.475,11.475,0,0,1,9,1.5Z" transform="translate(-1.5 -1.5)"/>
+  </g>
+</svg>

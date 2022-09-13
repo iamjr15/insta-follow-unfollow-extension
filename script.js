@@ -1,0 +1,1 @@
+window.postMessage({ type: "_sharedData", text: JSON.stringify(window._sharedData) }, "*")

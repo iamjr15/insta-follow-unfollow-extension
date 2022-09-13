@@ -1,0 +1,80 @@
+{
+    "name": "IG Auto Follow-Unfollow - Prospectss.com",
+    "description": "Grow IG Followers with Follow-Unfollow growth hack",
+    "manifest_version": 3,
+    "version": "1.1",
+    "action": {
+        "default_icon": "icon/icon.png",
+        "default_popup": "index.html"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "script.js",
+                "extension-icon/chevron-right.svg",
+                "extension-icon/chevron-right_signup.svg",
+                "images/logo-color.png",
+                "images/logo-white.png",
+                "fonts/Montserrat/Montserrat-Regular.ttf",
+                "fonts/Montserrat/Montserrat-Medium.ttf",
+                "fonts/Montserrat/Montserrat-SemiBold.ttf",
+                "fonts/Montserrat/Montserrat-Bold.ttf",
+                "extension-icon/chart.svg",
+                "extension-icon/diamondButton.svg",
+                "extension-icon/gem.svg",
+                "extension-icon/help.svg",
+                "extension-icon/icon.png  ",
+                "extension-icon/info.svg",
+                "extension-icon/logout.svg",
+                "extension-icon/notFound.svg",
+                "extension-icon/reload.svg",
+                "extension-icon/rotate-cw.svg",
+                "extension-icon/chevron-right.svg ",
+                "extension-icon/feather-cpu.svg",
+                "extension-icon/globe.svg",
+                "extension-icon/icon2x.png",
+                "extension-icon/icon.svg  ",
+                "extension-icon/loading.svg",
+                "extension-icon/refresher.svg",
+                "extension-icon/mail.svg",
+                "extension-icon/phone.svg",
+                "extension-icon/right.svg",
+                "extension-icon/wrong.svg",
+                "extension-icon/verifiedIcon.png",
+                "extension-icon/rightArrow.svg"
+            ],
+            "matches": [
+                "https://www.instagram.com/*"
+            ]
+        }
+    ],
+    "icons": {
+        "16": "icon/icon16.png",
+        "48": "icon/icon48.png",
+        "128": "icon/icon128.png"
+    },
+    "permissions": [
+        "tabs",
+        "storage"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.instagram.com/*"
+            ],
+            "js": [
+                "content.js","papaparse.min.js"
+            ],
+            "css": [
+                "general.css"
+            ]
+        }
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "host_permissions": [
+        "https://*.instagram.com/*",
+        "https://*.prospectss.com/*"
+    ]
+}
